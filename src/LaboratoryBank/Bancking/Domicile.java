@@ -1,4 +1,4 @@
-package LaboratoryOneTwo.Bancking;
+package LaboratoryBank.Bancking;
 
 public class Domicile {
 

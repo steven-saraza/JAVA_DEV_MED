@@ -1,11 +1,11 @@
-package LaboratoryOneTwo;
+package LaboratoryBank;
 
-import LaboratoryOneTwo.AccountType.CheckingAccount;
-import LaboratoryOneTwo.AccountType.SavingAccount;
-import LaboratoryOneTwo.Bancking.Account;
-import LaboratoryOneTwo.Bancking.Bank;
-import LaboratoryOneTwo.Bancking.Client;
-import LaboratoryOneTwo.Bancking.Domicile;
+import LaboratoryBank.AccountType.CheckingAccount;
+import LaboratoryBank.AccountType.SavingAccount;
+import LaboratoryBank.Bancking.Account;
+import LaboratoryBank.Bancking.Bank;
+import LaboratoryBank.Bancking.Client;
+import LaboratoryBank.Bancking.Domicile;
 
 import java.util.ArrayList;
 import java.util.TreeSet;

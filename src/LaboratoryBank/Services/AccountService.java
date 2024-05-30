@@ -1,6 +1,6 @@
-package LaboratoryOneTwo.Services;
+package LaboratoryBank.Services;
 
-import LaboratoryOneTwo.Bancking.Account;
+import LaboratoryBank.Bancking.Account;
 
 public interface AccountService {
 

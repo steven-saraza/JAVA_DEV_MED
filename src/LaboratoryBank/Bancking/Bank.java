@@ -1,6 +1,6 @@
-package LaboratoryOneTwo.Bancking;
+package LaboratoryBank.Bancking;
 
-import LaboratoryOneTwo.Services.CustomerService;
+import LaboratoryBank.Services.CustomerService;
 
 import java.util.Arrays;
 import java.util.TreeSet;
