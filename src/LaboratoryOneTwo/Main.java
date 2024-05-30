@@ -1,13 +1,13 @@
-import AccountType.CheckingAccount;
-import AccountType.SavingAccount;
-import Bancking.Account;
-import Bancking.Bank;
-import Bancking.Client;
-import Bancking.Domicile;
+package LaboratoryOneTwo;
+
+import LaboratoryOneTwo.AccountType.CheckingAccount;
+import LaboratoryOneTwo.AccountType.SavingAccount;
+import LaboratoryOneTwo.Bancking.Account;
+import LaboratoryOneTwo.Bancking.Bank;
+import LaboratoryOneTwo.Bancking.Client;
+import LaboratoryOneTwo.Bancking.Domicile;
 
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class Main {

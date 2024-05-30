@@ -1,8 +1,6 @@
-package AccountType;
+package LaboratoryOneTwo.AccountType;
 
-import Bancking.Account;
-
-import java.util.Collection;
+import LaboratoryOneTwo.Bancking.Account;
 
 public class SavingAccount extends Account{
 

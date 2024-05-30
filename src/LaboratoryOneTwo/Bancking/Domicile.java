@@ -1,4 +1,4 @@
-package Bancking;
+package LaboratoryOneTwo.Bancking;
 
 public class Domicile {
 
@@ -60,7 +60,7 @@ public class Domicile {
 
     @Override
     public String toString() {
-        return "Bancking.Domicile{" +
+        return "LaboratoryOneTwo.Bancking.Domicile{" +
                 "street='" + street + '\'' +
                 ", number=" + number +
                 ", colony='" + colony + '\'' +

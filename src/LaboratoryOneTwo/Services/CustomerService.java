@@ -1,5 +1,5 @@
-package Services;
-import Bancking.Client;
+package LaboratoryOneTwo.Services;
+import LaboratoryOneTwo.Bancking.Client;
 
 public interface CustomerService {
 

@@ -1,7 +1,6 @@
-package AccountType;
+package LaboratoryOneTwo.AccountType;
 
-import Bancking.Account;
-import Bancking.Client;
+import LaboratoryOneTwo.Bancking.Account;
 
 public class CheckingAccount extends Account {
 

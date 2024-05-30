@@ -1,6 +1,6 @@
-package Bancking;
+package LaboratoryOneTwo.Bancking;
 
-import Services.AccountService;
+import LaboratoryOneTwo.Services.AccountService;
 
 import java.util.ArrayList;
 import java.util.Arrays;
