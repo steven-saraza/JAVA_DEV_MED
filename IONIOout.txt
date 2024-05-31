@@ -1,0 +1,28 @@
+Ejercicio de IO:
+Objetivo: Leer un archivo de texto y contar el número total de palabras en el archivo.
+Instrucciones: Escribe un programa en Java que abra un archivo de texto utilizando FileReader y BufferedReader, lea el archivo línea por línea, y cuente el número total de palabras utilizando un delimitador de espacio en blanco. Al final, el programa debe imprimir el número total de palabras encontradas.
+Ejercicio de NIO:
+Objetivo: Leer un archivo de texto y copiar su contenido a otro archivo usando NIO.
+Instrucciones: Utiliza FileChannel y ByteBuffer para leer un archivo de texto y luego escribir el contenido en un nuevo archivo. Asegúrate de manejar adecuadamente el tamaño del buffer para no sobrecargar la memoria.
+Ejercicio sobre Serialización y Deserialización
+Ejercicio Práctico de Serialización:
+Objetivo: Crear y serializar un objeto Persona.
+Instrucciones: Define una clase Persona que incluya nombre, edad y dirección, y asegúrate de que sea serializable. Escribe un programa que cree un objeto Persona, lo serialice y lo guarde en un archivo.
+Ejercicio Práctico de Deserialización:
+Objetivo: Leer un objeto Persona desde un archivo serializado.
+Instrucciones: Escribe un programa que lea el archivo creado en el ejercicio anterior, deserialice el objeto Persona y muestre sus datos en la consola.
+Ejercicio sobre Uso de la Clase Paths y Operaciones de Archivos
+Ejercicio de Paths y Files:
+Objetivo: Manipular archivos y directorios utilizando las clases Paths y Files.
+Instrucciones: Crea un programa que:
+Verifique si un archivo específico existe.
+Si no existe, crea el archivo y un directorio padre si es necesario.
+Lista todos los archivos en el directorio del usuario.
+Filtra y muestra solo archivos con la extensión .txt.
+Ejercicios sobre Métodos list() y walk()
+Ejercicio usando list():
+Objetivo: Listar todos los archivos en un directorio específico.
+Instrucciones: Escribe un programa que use Files.list() para imprimir todos los archivos en el directorio del usuario. Usa un filtro para excluir directorios y muestra solo archivos.
+Ejercicio usando walk():
+Objetivo: Encontrar y listar todos los archivos .txt en un directorio y sus subdirectorios.
+Instrucciones: Utiliza Files.walk() para buscar y listar todos los archivos con extensión .txt en el directorio del usuario y sus subdirectorios. Asegúrate de manejar cualquier posible excepción.
