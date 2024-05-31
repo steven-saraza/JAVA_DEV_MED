@@ -4,7 +4,12 @@ import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class ExerciseIONIO {
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+
+public class ExcerciseIONIO {
 
     public static void exerciseIO(){
         String urlArchive = "F:\\Platzi\\JAVA\\JAVA_DEV_MED\\JAVA_DEV_MED\\JAVA_DEV_MED\\IONIO.txt";
@@ -96,5 +101,70 @@ public class ExerciseIONIO {
             System.out.println(e);
         }
 
+    }
+
+    public static void excercisePathsFiles() throws InterruptedException {
+        String nameArchiveDir = "tesCreate2";
+        Path homePath = Paths.get("F:\\Platzi\\JAVA\\JAVA_DEV_MED\\JAVA_DEV_MED\\JAVA_DEV_MED\\");
+        Path pathExist = Paths.get(homePath.toAbsolutePath() + "\\" + nameArchiveDir);
+
+        if(Files.exists(pathExist)){
+            System.out.println("El archivo/ruta existe");
+        }else {
+            System.out.println("El archivo/ruta no existe "+ Files.exists(pathExist));
+            Thread.sleep(2*1000);
+            System.out.println("Se procederá a crear el archivo/ruta " + nameArchiveDir );
+            Thread.sleep(3*1000);
+            Path pathNew = Paths.get(homePath.toAbsolutePath().toString()).resolve(nameArchiveDir);
+
+            try {
+
+                if(nameArchiveDir.contains(".txt")){
+                    Files.createFile(pathNew);
+                    System.out.println("Archivo Creado");
+                }else{
+                    Files.createDirectory(pathNew);
+                    System.out.println("La ruta se a Creado");
+                }
+
+            }catch (IOException e){
+                System.out.println(e);
+            }
+
+
+        }
+
+    }
+
+    public static void excerciseListWalk() {
+
+        String home = System.getProperty("user.home");
+        Path urlArchive = Paths.get(home);
+        System.out.println(urlArchive);
+        try(Stream<Path> content = Files.list(urlArchive); Stream<Path> contentTxt = Files.list(urlArchive) ){
+            System.out.println("Mostrando todos los archivos en la carpeta\n");
+            content.filter(a-> !Files.isDirectory(a))
+                    .forEach(System.out::println);
+            System.out.println("\n**************************");
+            System.out.println("\nSolo mostrando los .txt\n");
+            contentTxt.filter(a-> a.toString().endsWith(".txt"))
+                    .forEach(System.out::println);
+
+        }catch (IOException e){
+            System.out.println(e);
+        }
+
+        try(Stream<Path> content = Files.walk(urlArchive); Stream<Path> contentTxt = Files.walk(urlArchive) ){
+            System.out.println("Mostrando todos los archivos en la carpeta con Walk\n");
+            content.filter(a-> !Files.isDirectory(a))
+                    .forEach(System.out::println);
+            System.out.println("\n**************************");
+            System.out.println("\nSolo mostrando los .txt con Walk\n");
+            contentTxt.filter(a-> a.toString().endsWith(".txt"))
+                    .forEach(System.out::println);
+
+        }catch (IOException | UncheckedIOException e){
+            System.out.println(e);
+        }
     }
 }

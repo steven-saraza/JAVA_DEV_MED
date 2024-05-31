@@ -2,13 +2,13 @@ package PracticeArchives;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        ExerciseIONIO.exerciseIO();
-        ExerciseIONIO.excerciseNIO();
-        ExerciseIONIO.excerciseSerialize();
-        ExerciseIONIO.excerciseDerialize();
-
-
+        //ExcerciseIONIO.exerciseIO();
+        //ExcerciseIONIO.excerciseNIO();
+        //ExcerciseIONIO.excerciseSerialize();
+        //ExcerciseIONIO.excerciseDerialize();
+        //ExcerciseIONIO.excercisePathsFiles();
+        ExcerciseIONIO.excerciseListWalk();
     }
 }
