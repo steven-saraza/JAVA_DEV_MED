@@ -1,4 +1,4 @@
-package LaboratoryStream;
+package PracticeStream;
 
 import java.util.*;
 import java.util.stream.Collectors;

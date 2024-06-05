@@ -1,6 +1,4 @@
-package LaboratoryStream;
-
-import java.util.Comparator;
+package PracticeStream;
 
 public class Person implements Comparable<Person> {
 
