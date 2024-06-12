@@ -9,6 +9,8 @@ public class Main {
         //ExcerciseIONIO.excerciseSerialize();
         //ExcerciseIONIO.excerciseDerialize();
         //ExcerciseIONIO.excercisePathsFiles();
-        ExcerciseIONIO.excerciseListWalk();
+        //ExcerciseIONIO.excerciseListWalk();
+
+
     }
 }
