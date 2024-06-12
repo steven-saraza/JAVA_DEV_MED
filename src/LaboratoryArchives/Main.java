@@ -80,23 +80,23 @@ public class Main {
                         //Se identifica la cadena de cuenta de ahorros o cuenta de cheque para guardar lo datos de forma correcta
                         if (tipoCuenta.equals("CA")) {
                             double interestRateMonth = addicionalParameter;
-                            SavingAccount account = new SavingAccount(number, balance, interestRateMonth);
-                            accountServices.addAccount(account);
+                            SavingAccount savingAccount = new SavingAccount(number, balance, interestRateMonth);
+                            accountServices.addAccount(savingAccount);
                             Client client = customerServices.seeCustomer(numberId);
                             if (client != null) {
-                                client.getAccounts().add(account);
-                                System.out.println("Cuenta de ahorro agregada a Cliente " + numberId + ": " + account);
+                                client.getAccounts().add(savingAccount);
+                                System.out.println("La cuenta de ahorros se agregó correctamente al cliente " + numberId + ": " + savingAccount);
                             } else {
-                                System.out.println("Cliente " + numberId + " no encontrado.");
+                                System.out.println("Cliente " + numberId + " no c.");
                             }
                         } else if (tipoCuenta.equals("CC")) {
                             double commission = addicionalParameter;
-                            CheckingAccount cuenta = new CheckingAccount(number, balance, commission);
-                            accountServices.addAccount(cuenta);
+                            CheckingAccount checkingAccount = new CheckingAccount(number, balance, commission);
+                            accountServices.addAccount(checkingAccount);
                             Client client = customerServices.seeCustomer(numberId);
                             if (client != null) {
-                                client.getAccounts().add(cuenta);
-                                System.out.println("Cuenta de cheque agregada a Cliente " + numberId + ": " + cuenta);
+                                client.getAccounts().add(checkingAccount);
+                                System.out.println("La checkingAccount de ahorros se agregó correctamente al client " + numberId + ": " + checkingAccount);
                             } else {
                                 System.out.println("Cliente " + numberId + " no encontrado.");
                             }
